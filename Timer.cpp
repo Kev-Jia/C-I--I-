@@ -75,6 +75,7 @@ int main()
         }
         if(hours == hrs && minutes == min && seconds2 == sec + 1)
         {
+            cout << "Time's up!" << endl;
             return 0;
         }
     }
