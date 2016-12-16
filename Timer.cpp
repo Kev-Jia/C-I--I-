@@ -37,6 +37,7 @@ int main()
         sec += m;
         sec = sec - (n * 60);
     }
+    
     if(min >= 60)
     {
         int k;
@@ -58,26 +59,31 @@ int main()
         {
             system("clear");
         }
+        
         cout << hours << ":" << minutes << ":" << seconds2;
         cout << "" << endl;
         usleep(microseconds);
         ++seconds2;
         system("clear");
+        
         while(seconds2 == 60)
         {
             minutes = minutes + 1;
             seconds2 = 0;
         }
+        
         while(minutes == 60)
         {
             hours = hours + 1;
             minutes = 0;
         }
+        
         if(hours == hrs && minutes == min && seconds2 == sec + 1)
         {
             cout << "Time's up!" << endl;
             return 0;
         }
     }
+    
     return 0;
 }
